@@ -1,4 +1,11 @@
-const botonCargarPersona = document.querySelector('#cargar-pokemones');
+const dataApi = new DataApiProcessor();
+
+dataApi.getData().then(pokeData => {
+     const pokeComponentHandler = new pokeComponentHandler(pokeData)
+}
+  )
+
+
 
 
 botonCargarPersona.addEventListener('click', () => {

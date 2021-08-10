@@ -67,10 +67,10 @@ Cada mecanismo tiene sus diferencias:
 
 Por otra parte, deberás decidir cómo almacenar la información que el juego necesita:
 
-- Pokemones elegidos al azar
+- Pokemones elegidos al azar CADA UNO ES UNA CONSTANTE
 - Pokemon elegido para combatir
 - Pokemones oponentes
-- Puntuación de la ronda
+- Puntuación de la ronda 
 - Puntuación del juego
 - Rondas a jugar
 - Rondas jugadas
@@ -289,4 +289,8 @@ Tranqui, puede ser un poco abrumador leer todo esto.
 - [Crear un enrutador SPA (Single Page Application) utilizando JavaScript](https://dev.to/alexcamachogz/creando-un-router-con-vanilla-javascript-27pl): Esto puede servir para trabajar todo en una sola pantalla sin necesidad de tener múltiples archivos HTML.
   
 
-
+fragmewnto de = script.js , estaba en linea 23
+ dataApi.request6RandomPokemon().then((data)=>{
+    console.log(data) ;
+    localStorage.setItem("arrayPokemon" , JSON.stringify(data) )
+})

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>poke-handler</title>
+    <link rel="stylesheet" href="poke-handler.css">
+</head>
+<body>
+    
+                <!-- logo + search screen 1 -->
+
+        <div class="logo">
+
+               <p>CHOOSE YOUR</p>
+               <img src="/poke-handler/img/image-12.png" width="250px" height="80px">
+        </div>
+              
+        <form action=""onsubmit="searchPokemon(event)">
+                <input type="text" name="pokemon" autocomplete="off">
+        </form>
+
+<!-- ////////////////////////////////////////////////////////////////////////////// -->
+
+               <!-- //custom element poke type and description            -->
+
+        <div class="poke-container">
+        
+                <img  id="pokemon-img" src=""> 
+        
+                <div  id="pokemon-id">#025</div> 
+       
+                <div  class="pokemon-name">Pikachu</div>
+                <div  class="poke-type"></div>
+                <div  class="poke-stats"></div>
+                
+        </div>    
+
+    <script src="poke-api-procesor.js"></script>
+   <script src="script.js"></script>
+</body>
+</html>

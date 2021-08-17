@@ -11,31 +11,42 @@
     
                 <!-- logo + search screen 1 -->
 
-        <div class="logo">
-
-               <p>CHOOSE YOUR</p>
-               <img src="/poke-handler/img/image-12.png" width="250px" height="80px">
-        </div>
-              
-        <form action=""onsubmit="searchPokemon(event)">
-                <input type="text" name="pokemon" autocomplete="off">
-        </form>
+     
 
 <!-- ////////////////////////////////////////////////////////////////////////////// -->
 
                <!-- //custom element poke type and description            -->
+ <div class="poke-container">
+        <div class="poke-container-1">
+                <div  class="pokemon-name">PIKACHU</div>
+                <div  id="pokemon-id"> #025</div>
+               
+        <div class="flags">
+             <img src="/poke-factsheet/img/image 8.png">   <div  class="pokemon-name-fr"></div> <img>
+             <img src="/poke-factsheet/img/image 10.png">   <div  class="pokemon-name-chn"></div> <img>
+             ><img src="/poke-factsheet/img/image 11.png">   <div  class="pokemon-name-jpn"></div> <img>
 
-        <div class="poke-container">
-        
-                <img  id="pokemon-img" src=""> 
-        
-                <div  id="pokemon-id">#025</div> 
-       
-                <div  class="pokemon-name">Pikachu</div>
-                <div  class="poke-type"></div>
-                <div  class="poke-stats"></div>
+        </div>     
+             <p>Win Ratio</p>
+             <h1>52%</h1>   
+        </div>
+        <div class="profile-specs">
+         
+        <img  id="pokemon-img" src="">
+
+        <div class="species">
+                <p class="pokemon-ability">Species</p>
+                <p class="poke-description"></p>
+            </div>
+
+                 <div  class="poke-type"></div>
+                <div  class="pokemon-profile"></div>
+                       
+                <div  class="poke-stats"></div> 
                 
-        </div>    
+        </div>
+        </div>     
+                  
 
     <script src="poke-api-procesor.js"></script>
    <script src="script.js"></script>

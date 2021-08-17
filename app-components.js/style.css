@@ -82,5 +82,10 @@ p{
   }
 }
 
-
+form{
+  position: absolute;
+  top: 30%;
+  left: 25%;
+  border-radius: 1%;  
+}
   

@@ -4,9 +4,9 @@ const timeout = setTimeout(() => {
   }, 1000);
   
   // Ejecución asincrónica cíclica
-  const interval = setInterval(() => {
-    
-  }, 1000);
+  const interval = setTimeout (function(){
+    location.href = "search.hmtl" ;
+},4000) ;
   
   // Cancelar ejecución asincrónica diferida
   clearTimeout(timeout);

@@ -50,6 +50,9 @@ dataApi.requestRandomPokemon().then((pokemon) => {
    const pokeDescription = document.querySelector('.poke-description') ;
    pokeDescription.innerHTML = pokemon.description;
 
+   
+   const pokeSpecies = document.querySelector('.poke-species') ;
+   pokeSpecies.innerHTML = pokemon.species ;
 
 })
 

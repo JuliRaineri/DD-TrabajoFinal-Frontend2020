@@ -1,14 +1,9 @@
-*{
-  box-sizing: border-box;
-}
-
-
-
+*{  box-sizing: border-box;}
 .poke-container{
   font-family: acumin-pro-extra-condensed;
   font-weight: 700;
   font-style: italic;
-  font-size: 20px;
+  font-size: 16px;
   color: #3663AD;
   background:linear-gradient(0deg, rgba(196, 196, 196, 0) 50.77%, #FFCB05 99.23%);
   width:100;
@@ -16,71 +11,54 @@
   margin: 0;
   display:flex;
   flex-direction:column;
-  justify-content:space-between;
 }
-.poke-container-1 {
+.poke-container-1{
   display:flex;
-  justify-content:space-between;
-  padding:1rem; 
-}
-
-
-#pokemon-img{
-  width:150px;
-  display:flex;
-  justify-content:flex-end;
-  
-  margin-right:2rem;
-  position:fixed;
-  bottom:45vh;
-  right:1rem;
-  z-index:100;
-}
-
-.profile-specs{
-  background: #fff;        
-  padding:3.5rem 1.5rem 1.5rem 1.5rem;
-  border-radius:20px 20px 0 0;
-  position:fixed;
-  bottom:0;
-  height:40vh;
-  width: 87%;
-  z-index:;  
+  flex-direction: row;
+  justify-content: flex-start;
+  padding:-1rem; 
+  margin: 0.5rem;
 }
 .pokemon-name{
-  margin-top: -1rem;
+  margin: 10px;
+  margin-top: 0.5rem;
   font-size:3rem;
 }
-
 .flags{
-  margin-top: -0.5rem;
+  margin-top: -0.1rem;
   display:flex;
-  flex-direction:column;    
+  flex-direction:column;
+  padding: 10px; 
 }
-
 p{
-  margin:0;
+  margin:1rem;
 }
-h1{
-  margin:0;
+h1, h2{
+  margin:1rem;
   margin-top:-1rem;
   
 }
 
-.species{
-  display:flex;
- 
+.line{
+  border: 1px solid #F6BD20;
 }
-
-
-.pokemon-id{
-  color:  #3b0e0e;
-  font-style: italic;
-  font-weight: 200;
-
-}
-
 
 #pokemon-img{
-  width:30%;
-}
+  width:150px;
+  display:flex;
+  justify-content:flex-end;  
+  margin-right:2rem;
+  position:fixed;
+  bottom:55vh;
+  right:1rem;
+  z-index:100;
+  }
+
+  .poke-description{
+    padding-left:60px;
+    font-family: sans-serif;
+    font-size: 11px;
+    color: black;
+    margin: 60px;
+    font-style: normal;
+  }

@@ -1,42 +1,65 @@
 *{  box-sizing: border-box;}
+
+
 .poke-container{
   font-family: acumin-pro-extra-condensed;
-  font-weight: 700;
-  font-style: italic;
-  font-size: 16px;
-  color: #3663AD;
-  background:linear-gradient(0deg, rgba(196, 196, 196, 0) 50.77%, #FFCB05 99.23%);
+    background:linear-gradient(0deg, rgba(196, 196, 196, 0) 50.77%, #FFCB05 99.23%);
   width:100;
   height:100vh;
   margin: 0;
+  padding: 0;
   display:flex;
   flex-direction:column;
+  
 }
-.poke-container-1{
+.poke-container-1  {
   display:flex;
   flex-direction: row;
   justify-content: flex-start;
   padding:-1rem; 
-  margin: 0.5rem;
+  margin: 1rem;
+  color: #3663AD;  
 }
 .pokemon-name{
-  margin: 10px;
-  margin-top: 0.5rem;
-  font-size:3rem;
+ position: relative; 
+font-size: 72px;
+font-style: italic;
+font-weight: 700;
+line-height: 86px;
+letter-spacing: 0em;
+bottom: 4.8%;
+text-align: left;
+color: #3663AD;
+margin: 1rem;
 }
-.flags{
-  margin-top: -0.1rem;
+
+.flags  {
+  margin: 1rem  ;
+  margin-top: -3.5rem;
   display:flex;
   flex-direction:column;
-  padding: 10px; 
 }
-p{
-  margin:1rem;
+
+.details{
+  margin: 1rem;
+  padding: 10px;
+    margin-top: -1rem;
+
 }
-h1, h2{
-  margin:1rem;
-  margin-top:-1rem;
-  
+
+h1{
+  margin:0;
+  margin-top:-0.5rem;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+ .description , .poke-species{
+  display: flex;
+  flex-direction: column;
+  justify-items: flex-start;
+  padding: 1px;
+  margin: 0.1rem;
 }
 
 .line{
@@ -45,20 +68,37 @@ h1, h2{
 
 #pokemon-img{
   width:150px;
-  display:flex;
-  justify-content:flex-end;  
-  margin-right:2rem;
-  position:fixed;
-  bottom:55vh;
-  right:1rem;
-  z-index:100;
+   left: 48%;
+  position: absolute;
+  bottom: 55%;
   }
 
   .poke-description{
-    padding-left:60px;
+    position: absolute;
+    left: 48%;
+    bottom: 43%;
     font-family: sans-serif;
     font-size: 11px;
     color: black;
-    margin: 60px;
+    margin: 5px;
+    width: 45%;
     font-style: normal;
+    
   }
+
+  .profile-bottom{
+    position: static;
+    padding:3.5rem 1.5rem 1.5rem 1.5rem;
+    background-color: rgb(255, 255, 255);
+    margin: 1rem;
+    border-radius:20px 20px 0 0;
+    bottom:1%;
+    height:40vh;
+    width: 88%;
+     
+    
+}
+
+  */armar una caja con tres elementos > un titulo SPECIES - 
+  un subtitulo > el nombre dela especie que viene de la api- a
+   la derecha la descrpicion quye viene de la api.*/

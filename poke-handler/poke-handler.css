@@ -43,7 +43,7 @@ margin: 1rem;
 .details{
   margin: 1rem;
   padding: 10px;
-    margin-top: -1rem;
+  margin-top: -1rem;
 
 }
 
@@ -51,15 +51,20 @@ h1{
   margin:0;
   margin-top:-0.5rem;
   font-family: 'Roboto Condensed', sans-serif;
+  
 }
 
 
- .description , .poke-species{
+ .description{
   display: flex;
   flex-direction: column;
-  justify-items: flex-start;
-  padding: 1px;
-  margin: 0.1rem;
+  justify-items: flex-start; 
+  margin: 1rem;
+  color: #000;
+  line-height: 21.09px;
+  font-weight: normal;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 18px;
 }
 
 .line{
@@ -70,13 +75,13 @@ h1{
   width:150px;
    left: 48%;
   position: absolute;
-  bottom: 55%;
+  bottom: 62%;
   }
 
   .poke-description{
     position: absolute;
     left: 48%;
-    bottom: 43%;
+    bottom: 55%;
     font-family: sans-serif;
     font-size: 11px;
     color: black;
@@ -87,14 +92,15 @@ h1{
   }
 
   .profile-bottom{
-    position: static;
-    padding:3.5rem 1.5rem 1.5rem 1.5rem;
+    position: absolute;
+    padding:1rem 1.5rem 1.5rem 1.5rem;
     background-color: rgb(255, 255, 255);
     margin: 1rem;
     border-radius:20px 20px 0 0;
     bottom:1%;
-    height:40vh;
+    height:50vh;
     width: 88%;
+    
      
     
 }

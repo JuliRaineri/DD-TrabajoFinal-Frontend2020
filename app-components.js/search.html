@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/app-components.js/style.css">
     <title>search</title>
 </head>
 <body>
@@ -11,11 +12,12 @@
     <img src="/poke-handler/img/image-12.png" width="250px" height="80px">
 </div>
    
-<form action=""onsubmit="searchPokemon(event)">
+<form id="form">
      <input type="text" name="pokemon" autocomplete="off">
-     <button>search</button>
+     <button id="btn" type="submit">search</button>
 </form> 
 
-<script src="home-card.js"></script>
+<script src="search.js"></script>
+
 </body>
 </html>

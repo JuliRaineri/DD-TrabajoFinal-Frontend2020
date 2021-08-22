@@ -1,3 +1,3 @@
 setTimeout (function(){
-    location.href = "search.hmtl" ;
+    location.href = "search.html" ;
 },4000) ;

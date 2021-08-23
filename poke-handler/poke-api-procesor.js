@@ -10,7 +10,7 @@ class PokeApiProcesor {
     
 
     async requestRandomPokemon() {
-        const pokeName = localStorage.getItem("pokeName") ;
+        const pokeName = localStorage.getItem("pokeName" , "pokeId") ;
         const data = await fetch( `https://app.pokemon-api.xyz/pokemon/${pokeName}`) ;
         const json = await data.json();
         return json;
@@ -18,12 +18,8 @@ class PokeApiProcesor {
 
     async request6RandomPokemon(){
         const pokemon1 = await this.requestRandomPokemon() ;
-        const pokemon2 = await this.requestRandomPokemon() ;
-        const pokemon3 = await this.requestRandomPokemon() ;
-        const pokemon4 = await this.requestRandomPokemon() ;
-        const pokemon5 = await this.requestRandomPokemon() ;
-        const pokemon6 = await this.requestRandomPokemon() ;
-        return [pokemon1 , pokemon2 , pokemon3, pokemon4, pokemon5, pokemon6]
+        
+        return [pokemon1 ]
     }
 }
 

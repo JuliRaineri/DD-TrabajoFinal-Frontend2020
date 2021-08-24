@@ -105,15 +105,15 @@ h1{
 
 #btn{
   position: absolute;
-  top: 90%;
-  left: 2%;
+  top: 91%;
+  left: 2.5%;
   font-family: acumin-pro-extra-condensed,sans-serif;
   background-color:  #3663AD;
   border-radius: 20px 20px 0px 0px;
   color: #fff;
   font-size: 62px;
   line-height: 86px;
-  width: 300px;
+  width: 350px;
   height: 80px;
 }
 

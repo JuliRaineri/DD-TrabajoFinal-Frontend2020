@@ -18,12 +18,13 @@ html body{
   justify-content: center;
   align-items: center;
   margin: 1rem;
+  
 }
 
 .logo-container span{
   position: absolute;
   top: 30%;
-  left: 40%;
+  left: 50%;
   transform: translate(-50%, -50%);
 }
 
@@ -32,7 +33,7 @@ html body{
 .searchTerm {
   position: absolute;
   top: 40%;
-  left: 40%;
+  left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
   border: 3px solid #3663AD;
@@ -48,7 +49,7 @@ html body{
 .logo{
   position: absolute;
   top: 20%;
-  left: 40%;
+  left: 50%;
   transform: translate(-50%, -50%); 
 }
 
@@ -63,10 +64,10 @@ span{
 
 .loading {
   position: absolute;
+  left: 38%;
+  top: 51%; 
   font-size: 1rem;
   font-weight: bold;
-  left: 45%;
-  top: 50%;
   color:#3663AD;
   line-height: 57px;
   font-weight: 700;
@@ -83,7 +84,7 @@ span{
   top: 57%;
   width: 12rem;
   height: 12rem;
-  border: 5px solid rgb(65, 81, 221);
+  border: 5px solid #3663AD;
   margin-left: -7.1rem;
   margin-top: -7.1rem;
   border-radius: 50%;

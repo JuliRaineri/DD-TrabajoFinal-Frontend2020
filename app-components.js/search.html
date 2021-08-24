@@ -9,17 +9,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/app-components.js/style.css">
+    <link rel="stylesheet" href="/poke-handler/poke-handler.css">
     <title>search</title>
 </head>
 <body>
     <div class="logo-container">
-    <span>POKEMON FINDER</span>
+    
     <img class="logo" src="/poke-handler/img/image-12.png" width="250px" height="80px">
+    <div><span>FINDER</span></div>
 </div>
    
 <form id="form">
-    <div>
-     <input type="text" name="pokemon" autocomplete="off" placeholder="Pokemon Name or Number">
+    <div class="search">
+     <input type="text" class="searchTerm" name="pokemon" autocomplete="off" placeholder=" Pokemon Name or Number">
     </div>
     <div>
      <button id="btn" type="submit">search</button>

@@ -24,42 +24,20 @@ class PokeApiProcesor {
 }
 
      
+class PokeApiGif{
 
+    async requestGif() {
+    const pokeImg = localStorage.getItem("pokeImg", this.pokeImg) ;
+     const data = await fetch('https://pokeapi.co/api/v2/pokemon/${pokeImg}') ;
+     const json = await data.json() ;
+     return json ; 
+    }
 
-    //https://app.pokemon-api.xyz/pokemon/${pokeName}
+    async requestGif() {
 
+        const pokemon1 = await this.requestGif() ;
+        return[pokemon1]
+    }
+}
 
-
-
-
-
-//para instanciar el nombre deuna clase constructor , new() se ejecuta esa funcion primero
-//para probar en la consola, declaro una clase vacia:  class DataApiProcesor  que tenga como constructor
-//un console.log  que diga "ready to process" 
-//class DataApiProcesor {
-//       constructor(){
-//       console.log("ready to process") ;    
-//} 
-//}  enter, vaa mostrar Undefined
-// luegocreo la variable dataApi =  new DataApiProcesor() ; enter
-//va a mostrar en cponsola Ready to process porque esta dentro del constructor
-//para inicializar cosas que necesitamos que ocurran coas apenas instanciamos la clase 
-//otro ejemplo  class persona {
-// definir propiedase   constructor(){
-//    this.nombre = '' ;
-//    this.apellido ='' ;
-//}
-//}this hace referncia a la instancia con la que se esta trabajndo actualmente o recien creada, en el caso de que cada elemento necesite ser especificado para que cada
-//copia pueda ser vista
-// juli = new persona() ; enter la consola devolvera > persona { nombre: "", apellido:""}
-//juli.nombre = 'juli' ; la consola devolvera "juli" y asi
-//si hago un console.log de juli, la consola devolvera la clase y sus instancias
-//persona { nombre:"juli", apellido ""} y tiene datos nombre y apellido
-//estructura que se pueda reutilizar con instancias  especifica con info especifica
-// es decir tomar las caracteristicas de la app y tomarlas de la api y usarlas a demanda
-//tamnbien puedo definir comportamientos  class perro constructor() thid.color = ""
-//}
-// y dentro de la clase pero fuera dle constructor agrgeagar un comportamiento
-//ladrar(){
-//    console.log('ladrar')
-//
+   

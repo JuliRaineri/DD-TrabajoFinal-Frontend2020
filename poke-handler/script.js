@@ -23,7 +23,7 @@ dataApi.requestRandomPokemon().then((pokemon) => {
    pokeType.innerHTML = pokemon.type[0] ;
 
    const pokeImg = document.querySelector('#pokemon-img') ;
-   pokeImg.src = pokemon.thumbnail ;
+   pokeImg.src = pokemon.thumbnail;
    
    const pokeName = document.querySelector('.pokemon-name');
    pokeName.innerHTML = pokemon.name.english ;

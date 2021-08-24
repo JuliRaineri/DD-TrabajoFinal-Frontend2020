@@ -18,16 +18,40 @@ html body{
   justify-content: center;
   align-items: center;
   margin: 1rem;
-  width: ;
 }
+
+.logo-container span{
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+.searchTerm {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  border: 3px solid #3663AD;
+  padding: 5px;
+  height: 35px;
+  border-radius: 5px;
+  outline: none;
+  color: #3663AD;
+  width: 250px;
+  background-color: #F6BD20;
+}
+
 .logo{
   position: absolute;
-  width:175px;
-  height:75px ;
-  top: 15%;
-  left: 30%;
-  
+  top: 20%;
+  left: 40%;
+  transform: translate(-50%, -50%); 
 }
+
 span{
   font-family: acumin-pro-extra-condensed,sans-serif;
   font-style: italic;
@@ -35,9 +59,7 @@ span{
   line-height: 20px;
   font-weight: bold;
   font-size: 36px;
- 
 }
-
 
 .loading {
   position: absolute;
@@ -49,12 +71,12 @@ span{
   line-height: 57px;
   font-weight: 700;
   font-size: 30px;
-  
 }
 
 .cuenta-regresiva{
   display: none;
 }
+
 .borde-giratorio {
   position: absolute;
   left: 52%;
@@ -80,22 +102,3 @@ span{
   }
 }
 
-#form input, button{
-  display: flex;
-  flex-direction: column;
-  justify-items: center;
-  margin-bottom: 2rem;
-  
-}
-  
-#btn{
-  position: relative;
-  font-family: acumin-pro-extra-condensed,sans-serif;
-  background-color:  #3663AD;
-  border-radius: 20px 20px 0px 0px;
-  color: #fff;
-  font-size: 62px;
-  line-height: 86px;
-  
-  
-}

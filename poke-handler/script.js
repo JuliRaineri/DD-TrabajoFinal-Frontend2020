@@ -22,6 +22,13 @@ dataApi.requestRandomPokemon().then((pokemon) => {
    const pokeType = document.querySelector('.poke-type');
    pokeType.innerHTML = pokemon.type[0] ;
 
+   const pokeWeight = document.querySelector('.weight') ;
+   pokeWeight.innerHTML = pokemon.profile.weight  ;
+
+   const pokeHeight = document.querySelector('.height') ;
+   pokeHeight.innerHTML = pokemon.profile.height  ;
+   
+
    const pokeImg = document.querySelector('#pokemon-img') ;
    pokeImg.src = pokemon.thumbnail;
    
@@ -39,20 +46,15 @@ dataApi.requestRandomPokemon().then((pokemon) => {
 
    const pokeProfile = document.querySelector('.pokemon-profile');
    pokeProfile.innerHTML = pokemon.species ;
-
-   const pokeAbility = document.querySelector('.pokemon-ability');
-   pokeAbility.innerHTML = pokemon.profile.ability[0] ;
-
   
    const pokeStats = document.querySelector('.poke-stats') ;
    pokeStats.innerHTML = pokemon.base.Attack;
    
-   const pokeDescription = document.querySelector('.poke-description') ;
-   pokeDescription.innerHTML = pokemon.description;
+    const pokeDescription = document.querySelector('.poke-description') ;
+    pokeDescription.innerHTML = pokemon.description;
 
    
-   const pokeSpecies = document.querySelector('.poke-species') ;
-   pokeSpecies.innerHTML = pokemon.species ;
+   
 
 })
 

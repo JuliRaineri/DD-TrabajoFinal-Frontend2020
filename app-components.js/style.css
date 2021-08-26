@@ -20,9 +20,16 @@ html body{
   margin: 1rem;
 }
 
+.logo{
+  position: absolute;
+  top: 20%;
+  left: 48%;
+  transform: translate(-50%, -50%); 
+}
+
 .logo-container span{
   position: absolute;
-  top: 30%;
+  top: 54%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -43,12 +50,6 @@ html body{
   background-color: #F6BD20;
 }
 
-.logo{
-  position: absolute;
-  top: 20%;
-  left: 48%;
-  transform: translate(-50%, -50%); 
-}
 
 h4{
   position: absolute;

@@ -46,9 +46,6 @@ dataApi.requestRandomPokemon().then((pokemon) => {
 
    const pokeProfile = document.querySelector('.pokemon-profile');
    pokeProfile.innerHTML = pokemon.species ;
-  
-   const pokeStats = document.querySelector('.poke-stats') ;
-   pokeStats.innerHTML = pokemon.base.Attack;
    
     const pokeDescription = document.querySelector('.poke-description') ;
     pokeDescription.innerHTML = pokemon.description;
@@ -58,6 +55,16 @@ dataApi.requestRandomPokemon().then((pokemon) => {
 
    const pokemonAttack  = document.getElementById('progress-bar-attack') ;
    pokemonAttack.style.width = `${pokemon.base.Attack.toString()}px`;
+
+   const pokemonDefense  = document.getElementById('progress-bar-defense') ;
+   pokemonDefense.style.width = `${pokemon.base.Defense.toString()}px`;
+
+   // const pokemonSpAttack  = document.getElementById('progress-bar-Sp-Attack') ;
+   // pokemonSpAttack.style.width = `${pokemon.base.Sp.Attack.toString()}px`;
+  
+   const pokemonSpeed  = document.getElementById('progress-bar-speed') ;
+   pokemonSpeed.style.width = `${pokemon.base.Speed.toString()}px`;
+
    
 
 })

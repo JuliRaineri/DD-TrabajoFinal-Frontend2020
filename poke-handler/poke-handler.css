@@ -111,12 +111,12 @@ h1{
 
   }
 
-  /* .poke-type{
+  .poke-type{
     margin: 1rem  ;
-    margin-top:2rem;
+    margin-top:1rem;
     display:flex;
     flex-direction:column;
-  } */
+  } 
 
 
 #btn{
@@ -135,7 +135,6 @@ h1{
 .type {
   display: flex;
   flex-direction: column;
-  background-color: aqua;
   margin: 1rem;
   padding: 10px;
   color: #000;
@@ -145,13 +144,18 @@ h1{
   font-size: 18px;
 }
 
-
-.types-and-stats{
+ 
+.stats-title{
   display: flex;
   flex-direction: row;
-  margin-top: 2rem;
-  margin-left: 1.5rem;
-}
+  margin-top: 3rem;
+  margin-left: 1.8rem;
+  color: #000;
+  line-height: 21.09px;
+  font-weight: normal;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 18px;
+}  
 
 
 .weight,
@@ -164,46 +168,54 @@ h1{
     color: #000000;
 }
 
-.stats-container{  
-  margin: 1rem  ;
-  margin-top: -2.5rem;
+ .stats-container{  
   display:flex;
   flex-direction:column;
-  
+  margin-left: 4rem  ;
+  margin-top: -18.5rem;
+  padding: 20px;
 }
 
+
+.properties{
+  position: absolute;
+  left: 50%;
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  opacity: 0.5;
+}
 .hp-container{
   display: flex;
-
-  margin-top: 0.5rem;
-}
-
-#progress-bar, #progress-bar-attack{
-    margin: 1rem  ;
-    height: 20px;
-    background-color: red;
-}
-
-
-.hp-container,
-.attack-container,
-.defense-container,
-.sp-attack-container,
-.sp-defense-container,
-.speed-container {
-    display: flex;
-    justify-content: space-between;
-    align-content: space-between;
-    margin-bottom: 0.4rem;
-}
-
-.stats-name{
-  display: flex;
   
+} 
+
+#progress-bar, #progress-bar-attack, #progress-bar-defense, #progress-bar-speed{
+    margin: 0.3rem  ;
+    height: 5px;
+    background-color: #F6BD20;
+    width: 20%;   
 }
 
+  .hp-container,
+.attack-container,
+.defense-container, .sp-attack-container,
+.sp-defense-container,
+.speed-container
+ {
+    display: flex;
+    justify-content: flex-end;
+    align-content: space-between;
+    margin-bottom: 1rem;
+    padding: 0 ;
+    margin-right: 1rem;
+      
+}   
 
-.stats-name,
+.stats-name
  {
   font-family: Roboto, sans-serif;
   font-style: normal;

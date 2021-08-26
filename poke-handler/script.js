@@ -52,8 +52,12 @@ dataApi.requestRandomPokemon().then((pokemon) => {
    
     const pokeDescription = document.querySelector('.poke-description') ;
     pokeDescription.innerHTML = pokemon.description;
-
    
+   const pokemonHp  = document.getElementById('progress-bar') ;
+   pokemonHp.style.width = `${pokemon.base.HP.toString()}px`;
+
+   const pokemonAttack  = document.getElementById('progress-bar-attack') ;
+   pokemonAttack.style.width = `${pokemon.base.Attack.toString()}px`;
    
 
 })

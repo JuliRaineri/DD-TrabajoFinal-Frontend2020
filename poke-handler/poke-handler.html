@@ -1,130 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.typekit.net/gaq0jmo.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://use.typekit.net/gaq0jmo.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <title>poke-handler</title>
-    <link rel="stylesheet" href="poke-handler.css">
-</head>
-<body>
-    
-                <!-- logo + search screen 1 -->
+    <link rel="stylesheet" href="poke-handler.css" />
+  </head>
+  <body>
+    <!-- logo + search screen 1 -->
 
-     
+    <!-- ////////////////////////////////////////////////////////////////////////////// -->
 
-<!-- ////////////////////////////////////////////////////////////////////////////// -->
+    <!-- //custom element poke type and description            -->
+     <div class="poke-container">
+         <div class="poke-container-1">
+            <span>POKEMON #</span>
+         <div id="pokemon-id">#025</div>
+     </div>
 
-               <!-- //custom element poke type and description            -->
- <div class="poke-container">
-        <div class="poke-container-1">
-           <span>POKEMON #</span>  <div id="pokemon-id">#025 </div>             
+     <div class="pokemon-name">PIKACHU</div>
+
+      <div class="flags">
+        <div>
+          <img
+            src="/poke-factsheet/img/image 11.png"
+            width="24.04"
+            height="16px"
+          /><span class="pokemon-name-jpn"></span> <img />
+        </div>
+        <div>
+          <div>
+            <img
+              src="/poke-factsheet/img/image 10.png"
+              width="24.04"
+              height="16px"
+            />
+            <span class="pokemon-name-chn"></span> <img />
+          </div>
+
+          <img
+            src="/poke-factsheet/img/image 8.png"
+            width="24.04"
+            height="16px"
+          />
+          <span class="pokemon-name-fr"></span> <img />
+        </div>
+      </div>
+      <div class="details">
+           <span>Win Ratio</span>
+           <h1>52%</h1>
+      </div>
+
+      <img
+        id="pokemon-img"
+        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/25.gif"
+      />
+      <img />
+
+      <div class="description"><span class="poke-description"></span></div>
+      <!-- pokemon properties -->
+
+      <div class="species">
+        <span>SPECIES</span>
+        <div class="pokemon-profile">Electric</div>
+      </div>
+
+      <div>
+        <div class="line"></div>
+
+        <div class="type">
+          <span>TYPE</span>
+          <div class="poke-type"></div>
+
+          <span>Weight</span>
+          <p class="weight"></p>
+          <span>Height</span>
+          <p class="height"></p>
         </div>
 
-        <div  class="pokemon-name">PIKACHU</div>
-               
-                <div class="flags">
-                  <div> 
-                     <img src="/poke-factsheet/img/image 11.png" width="24.04" height="16px" ><span  class="pokemon-name-jpn"></span> <img>
-                </div>
-                  <div>
-                     
-                  <div>
-                      <img src="/poke-factsheet/img/image 10.png" width="24.04" height="16px">  <span class="pokemon-name-chn"></span> <img>
-                  </div>
-                
-                  <img src="/poke-factsheet/img/image 8.png" width="24.04" height="16px"> <span class="pokemon-name-fr"></span> <img>
-               </div>  
-                              
-        </div>  
-                  <div class="details">
-                      <span>Win Ratio</span>
-                       <h1>52%</h1>  
-                  </div>
-         
-             <img  id="pokemon-img" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/25.gif" > <img>
+        <div class="poke-stats"></div>
 
-             <div class="description"><span class="poke-description"></span> </div> 
-            <!-- pokemon properties -->
-            
-                <div class="species">   
-                  <span>SPECIES</span> 
-                  <div  class="pokemon-profile"></div> 
-                </div>      
-                  
-                 <div>   
-                    <div class="line"></div>
-                   
-                    
-                 
-                    <div class="type">
-                        <span>TYPE</span>   <div class="poke-type"> </div>   
-                    
-                     <span>Weight</span>
-                     <p class="weight"></p>
-                     <span>Height</span>
-                     <p class="height"></p>
-                    </div>  
+        <div>
+          <span class="description-1"></span>
+        </div>
 
-                    <div  class="poke-stats"></div> 
-                       
-                    
-                  <div>
-                  
-                  <span class="description-1"></span>    
-                 </div> 
+        <div class="stats-container">
+          <span class="features">POKEMON STATS</span>
 
-                 <div class="stats-container">
-                    <span class="features">POKEMON STATS</span>
-                    
-                    <div class="hp-container">
-                        <span class="stats-name">HP</span>
-                        <div class="pokemon-hp numbers"></div>
-                    </div>
+          <div class="hp-container">
+            <span class="stats-name">HP</span>
+            <div id="progress-bar"></div>
+          </div>
 
-                    <div class="attack-container">
-                        <span class="stats-name">Attack</span>
-                        <div class="pokemon-attack numbers"></div>
-                    </div>
+          <div class="attack-container">
+            <span class="stats-name">Attack</span>
+            <div id="progress-bar-attack"></div>
+          </div>
 
-                    <div class="defense-container">
-                        <span class="stats-name">Defense</span>
-                        <div class="pokemon-defense numbers"></div>
-                    </div>
+          <div class="defense-container">
+            <span class="stats-name">Defense</span>
+            <div id="progress-bar"></div>
+          </div>
 
-                    <div class="sp-attack-container">
-                        <span class="stats-name">Sp. Attack</span>
-                        <div class="pokemon-sp-attack numbers">30</div>
-                    </div>
+          <div class="sp-attack-container">
+            <span class="stats-name">Sp. Attack</span>
+            <div id="progress-bar"></div>
+          </div>
 
-                    <div class="sp-defense-container">
-                        <span class="stats-name">Sp. Defense</span>
-                        <div class="pokemon-sp-defense numbers">40</div>
-                    </div>
+          <div class="sp-defense-container">
+            <span class="stats-name">Sp. Defense</span>
+            <div id="progress-bar"></div>
+          </div>
 
-                    <div class="speed-container">
-                        <span class="stats-name">Speed</span>
-                        <div class="pokemon-speed numbers"></div>
-                    </div>
-
-                </div>
-    
-            </div>
-                       
-                
-                
-       
-      
-      </div>           
-                  
+          <div class="speed-container">
+            <span class="stats-name">Speed</span>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="poke-api-procesor.js"></script>
-   <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
 
 <!-- <div class="stats"><span>POKEMON STATS</span>

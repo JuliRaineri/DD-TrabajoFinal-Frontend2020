@@ -40,3 +40,11 @@ class PokeApiGif{
     }
 }
 
+const searchHTML = document.querySelector("#btn") ;
+
+searchHTML.addEventListener("click",    
+    function () {  
+window.history.back()   ;
+}
+             
+)

@@ -60,7 +60,7 @@ dataApi.requestRandomPokemon().then((pokemon) => {
    pokemonDefense.style.width = `${pokemon.base.Defense.toString()}px`;
 
    // const pokemonSpAttack  = document.getElementById('progress-bar-Sp-Attack') ;
-   // pokemonSpAttack.style.width = `${pokemon.base.Sp.Attack.toString()}px`;
+   //  pokemonSpAttack.style.width = `${pokemon.base.Sp.Attack.toString()}px`;
   
    const pokemonSpeed  = document.getElementById('progress-bar-speed') ;
    pokemonSpeed.style.width = `${pokemon.base.Speed.toString()}px`;

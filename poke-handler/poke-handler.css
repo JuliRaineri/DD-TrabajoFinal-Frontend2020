@@ -48,7 +48,7 @@ margin: 1rem;
 
 
 .details{
-  margin: 1rem;
+  margin: 0.5rem;
   padding: 10px;
   margin-top: 1rem;
 }
@@ -122,6 +122,7 @@ h1{
 #btn{
   position: absolute;
   top: 91.5%;
+  left: 2.3%;
   font-family: acumin-pro-extra-condensed,sans-serif;
   background-color:  #3663AD;
   border-radius: 20px 20px 0px 0px;
@@ -188,7 +189,7 @@ h1{
   color: #000000;
   opacity: 0.5;
 }
-.hp-container{
+.hp-box{
   display: flex;
   
 } 
@@ -200,11 +201,11 @@ h1{
     width: 20%;   
 }
 
-  .hp-container,
-.attack-container,
-.defense-container, .sp-attack-container,
-.sp-defense-container,
-.speed-container
+  .hp-box,
+.attack-box,
+.defense-box, .sp-attack-box,
+.sp-defense-box,
+.speed-box
  {
     display: flex;
     justify-content: flex-end;
@@ -226,6 +227,20 @@ h1{
   color: #000000;
 }
 
+
+.effects{
+  display: flex;
+  flex-direction: row;
+  
+  margin: 0.2rem;
+  margin-top: -5%;
+  color: #000;
+  line-height: 10px;
+  font-weight: normal;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 18px;
+  
+}
   */armar una caja con tres elementos > un titulo SPECIES - 
   un subtitulo > el nombre dela especie que viene de la api- a
    la derecha la descrpicion quye viene de la api.*/

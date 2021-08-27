@@ -10,23 +10,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/app-components.js/style.css">
     <link rel="stylesheet" href="/poke-handler/poke-handler.css">
+    
+
     <title>search</title>
 </head>
 <body>
-    <div class="logo-container">
+     <div class="search">
+     <div class="logo-container">
     
-    <img class="logo" src="/poke-handler/img/image-12.png" width="250px" height="80px">
-    <div><h4>FINDER</h4></div>
-</div>
+        <img class="logo" src="/poke-handler/img/image-12.png"
+        width="250px" height="80px">
+           <div><h4>FINDER</h4></div>
+     </div>
    
-<form id="form">
-    <div class="search">
-     <input type="text" class="searchTerm" name="pokemon" autocomplete="off" placeholder=" Pokemon Name or Number">
+      <form id="form">
+           <div>
+                <input type="text" class="searchTerm" name="pokemon" autocomplete="off" placeholder=" Pokemon Name or Number">
+           </div>
+           <div>
+                <button id="btn" type="submit">search</button>
+           </div>
+      </form> 
     </div>
-    <div>
-     <button id="btn" type="submit">search</button>
-    </div>
-</form> 
 </div>
 
 <script src="search.js"></script>

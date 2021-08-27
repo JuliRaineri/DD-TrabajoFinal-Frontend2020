@@ -1,10 +1,5 @@
 
 
-const backgroundColor = {
-   electric: '#3CC7DA' ,
-   flying: '#F6BD20', 
-} ;
-
 //obtiene datos y proceso para que el componente grafico los use
 class PokeApiProcesor {
     
@@ -24,21 +19,23 @@ class PokeApiProcesor {
 }
 
      
-class PokeApiGif{
+// class PokeApiGif{
 
-    async requestGif() {
-    const pokeImg = localStorage.getItem("pokeImg", this.pokeImg) ;
-     const data = await fetch('https://pokeapi.co/api/v2/pokemon/${pokeImg}') ;
-     const json = await data.json() ;
-     return json ; 
-    }
+//     async requestGif() {
+//     const pokeImg = localStorage.getItem("pokeImg", this.pokeImg) ;
+//      const data = await fetch('https://pokeapi.co/api/v2/pokemon/${pokeImg}') ;
+//      const json = await data.json() ;
+//      return json ; 
+//     }
 
-    async requestGif() {
+//     async requestGif() {
 
-        const pokemon1 = await this.requestGif() ;
-        return[pokemon1]
-    }
-}
+//         const pokemon1 = await this.requestGif() ;
+//         return[pokemon1]
+//     }
+// }
+
+// Return from Stage 3 to Stage 2 for the user to make a new search
 
 const searchHTML = document.querySelector("#btn") ;
 

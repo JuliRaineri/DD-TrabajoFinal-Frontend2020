@@ -1,18 +1,11 @@
-// Ejecución asincrónica diferida
-const timeout = setTimeout(() => {
-    console.log("Hola");
-  }, 1000);
+
   
   // Ejecución asincrónica cíclica
-  const interval = setTimeout (function(){
-    location.href = "search.hmtl" ;
+  // to load search.html
+  setTimeout (function(){
+    location.href = "search.html" ;
 },4000) ;
   
-  // Cancelar ejecución asincrónica diferida
-  clearTimeout(timeout);
-  
-  // Cancelar ejecución asincrónica cíclica
-  clearInterval(interval);
   
   // -----------------------------------------------
   
@@ -27,11 +20,7 @@ const timeout = setTimeout(() => {
   const bordeGiratorio = document.querySelector(".borde-giratorio");
   
   
-  let contador = Number(cuentaRegresiva.dataset.contarDesde);
-  let contadorEnPausa = false;
-  
-  
-  
+
   const cronometro = setInterval(() => {
     if (contadorEnPausa) {
       return;
